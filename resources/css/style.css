@@ -1,43 +1,39 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* General styles */
 body {
+  background-color: black;
+  color: seashell;
   font-family: "Helvetica", sans-serif;
   font-size: 22px;
-  color: seashell;
-  background-color: black;
   opacity: 0.9;
-  margin: 0;
 }
 
 a {
   color: seashell;
 }
 
-h2,
-h3,
-h4,
-h5 {
-  margin: 0;
-  padding: 0;
-}
-
 /* Header section styles */
 header {
   display: flex;
+  position: fixed;
+  z-index: 1;
   width: 100%;
   height: 69px;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid seashell;
-  position: fixed;
-  z-index: 1;
   background-color: black;
+  border-bottom: 1px solid seashell;
 }
 
 nav {
   display: flex;
   justify-content: flex-end;
   flex-grow: 1;
-
 }
 
 .logo img {
@@ -51,7 +47,7 @@ header span {
   margin-right: 25px;
 }
 
-/* Main section styles */
+/* Main section style */
 .main-section {
   display: flex;
   flex-direction: column;
